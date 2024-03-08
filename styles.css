@@ -1,0 +1,94 @@
+/* Import SF Pro, SF Compact, and SF Mono fonts */
+@import url('https://fonts.googleapis.com/css2?family=SF+Pro:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=SF+Compact:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=SF+Mono:wght@400&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url('background.jpg') no-repeat center center fixed; /* Background image */
+    background-size: cover; /* Cover the entire screen */
+    font-family: 'SF Compact', sans-serif; /* Apply SF Compact font */
+}
+
+.background-blur {
+    filter: blur(5px); /* Blurred effect only for the background image */
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    position: relative; /* Set position to relative */
+    z-index: 1; /* Ensure it's on top of the background */
+}
+
+.info-container {
+    max-width: 600px;
+    margin: 0 auto 50px; /* Add margin to separate from the conversion tool container */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    font-family: 'SF Mono', monospace; /* Apply SF Mono font */
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    text-align: center; /* Center align the title */
+    font-family: 'SF Pro', sans-serif; /* Apply SF Pro font */
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ol {
+    margin-left: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'SF Mono', monospace; /* Apply SF Mono font */
+}
+
+input[type="file"],
+select,
+button {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+    color: #fff; /* Text color */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Set the width of the input[type="file"] to match the other elements */
+input[type="file"] {
+    width: calc(100% - 22px);
+}
+
+/* Adjust the width of the select and button elements to match the input[type="file"] */
+select,
+button {
+    width: 100%;
+}
+
+input[type="file"]:hover,
+select:hover,
+button:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background on hover */
+}
+
+#output {
+    margin-top: 20px;
+}
