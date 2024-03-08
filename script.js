@@ -7,9 +7,9 @@ document.getElementById('conversionForm').addEventListener('submit', function(e)
     const formData = new FormData();
     formData.append('file', fileInput);
     formData.append('conversionType', conversionType);
-    
+
     // Make a POST request to the API Gateway endpoint
-    fetch('https://azrb0ptvm7.execute-api.ap-south-1.amazonaws.com/', {
+    fetch('https://zjc5gawcui.execute-api.ap-south-1.amazonaws.com', {
         method: 'POST',
         body: formData
     })
