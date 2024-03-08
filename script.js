@@ -9,7 +9,7 @@ document.getElementById('conversionForm').addEventListener('submit', function(e)
     formData.append('conversionType', conversionType);
     
     // Make a POST request to the API Gateway endpoint
-    fetch('https://zng7h85xn7.execute-api.ap-south-1.amazonaws.com/convert', {
+    fetch('https://iy6c3ow4vj.execute-api.ap-south-1.amazonaws.com', {
         method: 'POST',
         body: formData
     })
