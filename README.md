@@ -20,7 +20,7 @@ This is a free online document conversion tool that allows users to convert file
 
 ## Screenshots
 
-![Screenshot](Screenshot.png)
+![Screenshot](screenshot.png)
 
 ## Author
 
